@@ -1,0 +1,81 @@
+@media screen and (max-width: 1770px) { // Laptop
+  .crs {
+    &_cnt {
+      &_label {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) { // Courses Ipad FLOW
+  #crs {
+    &_cCB {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      justify-content: center;
+      align-items: center;
+    }
+    &_content {
+      overflow: scroll;
+    }
+  }
+  .crs {
+    &_cWdgB {
+      padding-bottom: 20px;
+      height: 30vw;//570px;
+      width: 25vw;//450px;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .crs {
+    &_cnt {
+      &_label {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .crs {
+    &_cWdg {
+      width: 100%;
+      height: 100%;
+    }
+    &_cWdgB {
+      height: 55vw;
+      width: 43.73vw;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) { // Wide Iphone
+  .crs {
+    &_cWdg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) and (min-height: 840px) { // Schedule Phone
+  .crs {
+    &_cnt {
+      &_label {
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #crs {
+    &_grid {
+      grid-template-columns: 100% 0; // 20% 80%
+    }
+  }
+}

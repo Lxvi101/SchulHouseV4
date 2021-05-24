@@ -1,0 +1,321 @@
+/* Courses View */
+
+@import "../presets";
+
+#crs {
+  &_grid {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 250px calc(100% - 250px); // 20% 80%
+    grid-template-areas: "Selector Content";
+  }
+
+  &_selector {
+    grid-area: Selector;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  &_selectorBG {
+    height: 100%;
+    width: 100%;
+
+    background: #DADBDC;
+  }
+
+  &_selectorLabel {
+    width: 100%;
+    height: 75px;
+
+    background-color: #6A77A5;
+
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.16);
+  }
+
+  &_content {
+    grid-area: Content;
+    position: relative;
+  }
+
+  &_cHB {
+    position: fixed;
+
+    z-index: $zHigh;
+
+    width: 100%;
+    height: 75px;
+  }
+
+  &_cHeader {
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.16);
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+
+    padding-right: 10px;
+  }
+
+  &_cCB {
+    position: relative;
+    top: 75px;
+    height: calc(100% - 75px);
+    width: 100%;
+
+    transition: all 0.25s ease;
+    opacity: 0;
+
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_cNotch {
+    position: fixed;
+    height: 45px;
+    width: 95px;
+
+    left: 85px;
+    bottom: 10px;
+
+    z-index: $zHigh;
+
+    background-color: #484F53;
+    border-radius: 23px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_cNotchS {
+    width: 21px;
+
+    margin-right: 10px;
+
+    fill: #eeeeee;
+
+    cursor: pointer;
+
+    &:hover {
+      fill: white;
+    }
+  }
+
+  &_cNotchDB {
+    width: 21px;
+
+    fill: #eeeeee;
+
+    cursor: pointer;
+
+    &:hover {
+      fill: white;
+    }
+  }
+
+  &_cHSettGearB {
+    width: calc(min(3.5%, 31px) + 10px);
+    display: flex;
+  }
+
+  &_cHSettGear {
+    width: calc(100% - 10px);
+
+    cursor: pointer;
+  }
+
+  &_cHMembers {
+    width: min(3.5%, 31px);
+
+    cursor: pointer;
+  }
+
+  &_noCourseSel {
+    height: calc(100% - 75px);
+    width: 100%;
+
+    margin: 75px 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &Font {
+      margin-top: 15px;
+      font-family: Montserrat;
+      color: $grey;
+      font-size: 1em;
+    }
+    &Ico {
+      height: 60px;
+    }
+  }
+}
+
+.crs {
+  &_entityContainer {
+    height: 75px;
+    width: 85%;
+
+    position: relative;
+
+    margin: 5px;
+    align-self: center;
+    border-radius: 15px;
+    background: #eeeeee;
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.08);
+
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+
+  &_entityLabel {
+    height: 75px;
+    width: 15%;
+
+    background: #6A77A5;
+    border-radius: 15px 0 0 15px;
+  }
+
+  &_entityName {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(0,-50%);
+
+    font-family: OSF Bold;
+    font-size: 20px;
+    text-align: left;
+    color: #81898C;
+  }
+
+  &_cWdgB {
+    height: 28vw;
+    width: 24.5vw;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &_cWdg {
+    height: 100%;
+    width: 90%;
+
+    border-radius: 15px;
+
+    background-color: white;
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.16);
+  }
+
+  &_cWdgLbl {
+    width: 100%;
+    height: 14%;
+
+    border-radius: 15px 15px 0 0;
+
+    margin-bottom: 10%;
+  }
+
+  &_cnt {
+    &_bg {
+      position: relative;
+      width: 100%;
+      height: 15%;
+
+      margin-top: 5%;
+
+      background-color: $white;
+
+      transition: all 0.25s ease;
+
+      display: flex;
+      align-items: center;
+    }
+
+    &_sLbl {
+      position: absolute;
+      height: 100%;
+      width: 12%;
+
+      transition: all 0.25s ease;
+
+      border-radius: 0 20% 20% 0;
+    }
+
+    &_label {
+      margin: 0 45px 0 calc(10px + 12%);
+      font-family: OSF;
+      font-size: 1.6em;
+
+      transition: all 0.25s ease;
+
+      color: $grey;
+    }
+    &_iSubmt {
+      position: absolute;
+      height: 35%;
+      fill: grey;
+      right: 15px;
+      top: 14%;
+
+      cursor: pointer;
+    }
+    &_iDecl {
+      position: absolute;
+      height: 22%;
+      fill: grey;
+      right: 15px;
+      bottom: 14%;
+
+      cursor: pointer;
+    }
+    &_iCentrd {
+      position: absolute;
+      height: 27%;
+      fill: grey;
+      right: 15px;
+
+      cursor: pointer;
+    }
+    &_notasks {
+      font-family: Montserrat;
+      color: $grey;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+@media (pointer:fine) {
+  .crs_entityContainer:hover {
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.32) !important;
+    background: white !important;
+  }
+}
+
+.crs_cnt_bg:hover {
+  box-shadow: 0px 3px 6px rgba(0,0,0, 0.16);
+}
+
+.crs_cnt_bg:hover .crs_cnt_sLbl {
+  width: 14%;
+}
+
+.crs_cnt_bg:hover .crs_cnt_label {
+  margin: 0 45px 0 calc(10px + 14%);
+}

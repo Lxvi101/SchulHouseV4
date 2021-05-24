@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 22">
+    <defs>
+        <style>
+            .td1,
+            .td2{fill:none;}
+            .td2{stroke:#81898c;stroke-width:3.5px;}
+        </style>
+    </defs>
+    <g id="Ebene_2" data-name="Ebene 2">
+        <g id="Ebene_1-2" data-name="Ebene 1">
+            <g id="Gruppe_23" data-name="Gruppe 23">
+                <g id="Ellipse_8" data-name="Ellipse 8">
+                    <ellipse class="td1" cx="10.5" cy="11" rx="10.5" ry="11"/>
+                    <ellipse class="td2" cx="10.5" cy="11" rx="8.75" ry="9.25"/>
+                </g>
+                <g id="Ellipse_9" data-name="Ellipse 9">
+                    <circle class="td1" cx="38" cy="11" r="11"/>
+                    <circle class="td2" cx="38" cy="11" r="9.25"/>
+                </g>
+                <g id="Ellipse_10" data-name="Ellipse 10">
+                    <ellipse class="td1" cx="65.5" cy="11" rx="10.5" ry="11"/>
+                    <ellipse class="td2" cx="65.5" cy="11" rx="8.75" ry="9.25"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.65 65.59">
+    <defs>
+        <style>.noselect01{fill:#d3d3d3;}
+            .noselect02{fill:#eee;}
+        </style>
+    </defs>
+    <g id="Ebene_2" data-name="Ebene 2">
+        <g id="Ebene_1-2" data-name="Ebene 1">
+            <rect class="noselect01" x="3" y="23.77" width="46.75" height="4.46" transform="translate(-10.66 26.26) rotate(-45)"/>
+            <path class="noselect02" d="M26,5A21,21,0,1,1,5,26,21,21,0,0,1,26,5m0-5A26,26,0,1,0,52,26,26,26,0,0,0,26,0Z"/>
+            <polygon class="noselect02" points="48.85 44.85 69.65 52.65 62.07 58.07 56.59 65.59 48.85 44.85"/>
+        </g>
+    </g>
+</svg>

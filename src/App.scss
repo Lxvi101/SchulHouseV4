@@ -1,0 +1,30 @@
+/* Fundemental CSS */
+
+@import "components/styles/partials/register";
+
+html, body {
+  -webkit-user-select: none;
+  background-color: #eeeeee;
+
+  padding: 0;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#PageGrid {
+  display: grid;
+
+  grid-template-columns: 75px calc(100vw - 75px);
+  grid-template-rows: 75px calc(100vh - 75px);
+
+  grid-template-areas:
+        "Sidebar Header"
+        "Sidebar ContentView"
+}

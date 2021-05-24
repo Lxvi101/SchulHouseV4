@@ -1,0 +1,159 @@
+/* Register View */
+@import "../presets";
+// example@school.edu
+#reg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+
+  &_header {
+    width: 100%;
+    height: 75px;
+
+    background: $blueGrey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_hLabel {
+    font-family: Montserrat;
+    font-size: 2.5em;
+
+    color: $white;
+  }
+
+  &_sidebar {
+    position: absolute;
+    margin: 20px 0 0 20px;
+
+    border-radius: 20px;
+
+    width: 300px;
+    height: 80%;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_label {
+      margin-top: 15px;
+
+      font-family: OSF Bold;
+      font-size: 20px;
+    }
+
+    &_signUpLink {
+      margin-top: 40px;
+
+      font-family: OSF;
+      color: $exp-Blue;
+      text-decoration: underline;
+    }
+
+    &_lostLink {
+      margin-top: 15px;
+
+      font-family: OSF;
+      color: $exp-Blue;
+      text-decoration: underline;
+    }
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_iptMail {
+      font-family: Montserrat;
+      font-size: 17.5px;
+      margin-top: 30vh;
+      border: 0;
+      outline: 0;
+
+      color: $grey;
+      caret-color: $grey;
+
+      height: 45px;
+      width: 300px;
+      background: white;
+      box-shadow: 0px 3px 6px rgba(0,0,0, 0.08);
+
+      border-radius: 45px;
+
+      padding: 0 15px 0 15px;
+
+      &:focus {
+        border: 1px $blue;
+      }
+      &::-webkit-input-placeholder {
+        text-align: left;
+        color: $white;
+      }
+    }
+
+    &_iptPwd {
+      font-family: Montserrat;
+      font-size: 25px;
+      margin-top: 10px;
+
+      color: $grey;
+      caret-color: $grey;
+
+      border: 0;
+      outline: 0;
+
+      height: 45px;
+      width: 300px;
+      background: white;
+      box-shadow: 0px 3px 6px rgba(0,0,0, 0.08);
+
+      border-radius: 45px;
+
+      padding: 0 15px 0 15px;
+
+      &:focus {
+        border: 1px $blue;
+      }
+      &::-webkit-input-placeholder {
+        text-align: left;
+        color: $white;
+      }
+    }
+
+    &_submit {
+      height: 45px;
+      width: 110px;
+
+      margin-top: 30px;
+
+      background: $blue;
+      border-radius: 45px;
+
+      box-shadow: 0px 3px 6px rgba(0,0,0, 0.08);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: all 0.25s ease;
+
+      &_label {
+        font-family: OSF Bold;
+        font-size: 19px;
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (pointer:fine) {
+  #reg_content_submit:hover {
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.32);
+    background: $blue_pressed;
+  }
+}

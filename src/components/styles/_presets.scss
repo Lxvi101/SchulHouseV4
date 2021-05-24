@@ -1,0 +1,41 @@
+/* Colors */
+
+$dark-Grey: #272727;
+$dark-BlueGrey: #272D30;
+$blueGrey: #343C40;
+$light-BlueGrey: #484f53;
+$grey: #81898C;
+$blue: #51859e;
+$blue_pressed: #436e81;
+$orange: #ed962b;
+$purple: #977490;
+$exp-Blue: #6A77A5;
+$green: #008670;
+$red: #BC656B;
+$white: #EEEEEE;
+
+$zOverlay: 20;
+$zPopup: 15;
+$zHigh: 10;
+$zNormal: 5;
+$zUnderlay: 0;
+$zBackground: -5;
+
+/* Fonts */
+@font-face{
+  font-family: "OSF";
+  //noinspection CssUnknownTarget
+  src: url('/repo/SF-Pro.ttf'); // url('/repo/SF-Pro.ttf') IS RIGHT.. ITS JUST THE COMPILER // CHANGE
+} // url('../../repo/SF-Pro.ttf'); SAFE WAY
+
+@font-face{
+  font-family: "OSF Bold";
+  //noinspection CssUnknownTarget
+  src: url('/repo/SF-Pro-Display-Semibold.otf'); // url('/repo/SF-Pro-Display-Semibold.otf') IS RIGHT.. ITS JUST THE COMPILER // CHANGE
+} // url('../../repo/SF-Pro-Display-Semibold.otf'); SAFE WAY
+
+@font-face{
+  font-family: "OSF Regular";
+  //noinspection CssUnknownTarget
+  src: url('/repo/SF-Pro-Display-Regular.otf'); // url('/repo/SF-Pro-Display-Semibold.otf') IS RIGHT.. ITS JUST THE COMPILER // CHANGE
+} // url('../../repo/SF-Pro-Display-Semibold.otf'); SAFE WAY

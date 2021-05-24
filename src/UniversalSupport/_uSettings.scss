@@ -1,0 +1,86 @@
+@media screen and (max-width: 1140px) {
+
+  .sett {
+    &_welcomeHeader {
+      font-size: 40px;
+    }
+    &_ProfilePicCOntainer {
+      width: 122px;
+      height: 122px;
+      margin-top: 200px;
+    }
+    &_contentBtn {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .sett {
+    &_contentBtnContainer {
+      width: 100%;
+    }
+    &_contentBtn {
+      height: 82px * 0.75;
+      width: 205px * 0.75;
+
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .sett {
+    &_contentBtn {
+      font-size: 15px;
+
+      height: 82px * 0.6;
+      width: 205px * 0.6;
+
+      &Desc {
+        width: 150px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .sett {
+    &_ProfilePicCOntainer {
+      margin-top: 125px;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .settC {
+    &_Font {
+      display: unset;
+      font-size: 1.5rem;
+    }
+  }
+
+  #sett {
+    &_grid {
+      grid-template-columns: 100% 0%;
+    }
+
+    &_content {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) { // Legacy Iphone
+  .settC {
+    &_Font {
+      display: none;
+    }
+  }
+  #sett {
+    &_grid {
+      grid-template-columns: 100% 0%;
+    }
+  }
+}

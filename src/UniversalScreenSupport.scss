@@ -1,0 +1,209 @@
+/* Stylesheet focused on supporting every possible screen size */
+
+@import "./UniversalSupport/uCourses";
+@import "./UniversalSupport/uSettings";
+
+// Custom Fixes //
+
+@media screen and (max-width: 1770px) { // Laptop
+  .nEntity {
+    &_title {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) { // Schedule Laptop
+  #tmt {
+    &_grid {
+      grid-template-columns: 100% 0 0;
+    }
+    &_timetableGrid { grid-row-gap: 0.9vw }
+    &_timetableHeader { grid-gap: 1.8vw }
+    &_timetableSide { grid-row-gap: 0.7vw ; margin: 0}
+  }
+  .tmt {
+    &_margin {
+      width: calc(100% - 80px);
+      height: calc(100% - 75px - 80px);
+      margin: 40px;
+    }
+
+    &_iconRow { grid-gap: 1.8vw }
+  }
+}
+
+@media screen and (max-width: 700px) { // Schedule Phone
+  .tmt {
+    &_margin {
+      width: calc(100% - 20px);
+      height: calc(100% - 75px - 20px);
+      margin: 10px;
+    }
+  }
+}
+@media screen and (max-width: 700px) and (min-height: 840px){ // Schedule Phone
+  .tmt {
+    &_margin {
+      height: calc(100% - 75px - 100px);
+      margin-top: 50px;
+    }
+  }
+  #tmt {
+    &_timetableGrid { grid-row-gap: 8px }
+    &_timetableSide { grid-row-gap: 5px}
+  }
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) and (max-height: 400px) { // Schedule Phone wide
+  .tmt {
+    &_margin {
+      height: calc(100% - 75px - 10px); //calc(100% - 75px - 10px);
+      width: calc(100% - 10px); //calc(100% - 10px);
+      margin: 10px 0 0 5px;
+    }
+    &_iconRow { grid-gap: 15px ; grid-template-columns: repeat(7, 1fr);}
+  }
+  #tmt {
+    &_timetableGrid {
+      grid-row-gap: 10px;
+      grid-template-rows: 6vw  calc(100% - 6vw);
+    }
+    &_timetableHeader { grid-gap: 15px ; grid-template-columns: repeat(7, 1fr); }
+    &_timetableSide { grid-row-gap: 10px ; grid-template-rows: repeat(11, 50px); margin-bottom: 10px;}
+  }
+
+  /* SideNav */
+
+  #SideNavContainer {
+    margin-top: 47px;
+  }
+}
+  // Regular screens //
+
+@media screen and (max-width: 1500px) {
+
+  /* News */
+  #news {
+    &_nfm {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) { // Ipad
+
+  /* News */
+  .nEntity {
+    &_title {
+      font-size: 13px;
+    }
+  }
+
+  /* Dashboard */
+  #dsb {
+    &_grid {
+      overflow: scroll;
+    }
+    &_widgetcontainer {
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;//35vw 35vw;
+      grid-template-rows: repeat(3, 400px);
+      grid-template-areas:
+            "one four"
+            "two five"
+            "three six";
+      grid-gap: 20px;
+    }
+    &_widgetHead {
+      height: 15%;
+    }
+    &_uWidget01 { grid-area: one !important; }
+    &_uWidget02 { grid-area: two !important; }
+    &_uWidget03 { grid-area: three !important; }
+    &_uWidget04 { grid-area: four !important; }
+    &_uWidget05 { grid-area: five !important; }
+    &_uWidget06 { grid-area: six !important; }
+  }
+  .dsb {
+    &_widget {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) { // Wide Iphone
+
+  /* News */
+  #news {
+    &_grid {
+      grid-template-columns: 100% 0%;
+    }
+  }
+
+  .nEntity {
+    &_title {
+      font-size: 16px;
+    }
+  }
+
+  #reg {
+    overflow: auto;
+    &_sidebar {
+      margin: 0;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%);
+
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) { // Iphone
+
+  /* Dashboard */
+  #dsb {
+    &_grid {
+      overflow: scroll;
+    }
+    &_widgetcontainer {
+      height: auto;
+      display: grid;
+      grid-template-columns: 100% 0;
+      grid-template-rows: repeat(6, 400px);
+      grid-template-areas: "one" "two" "three" "four" "five" "six";
+
+      align-items: center;
+
+      grid-column-gap-gap: 20px;
+    }
+    &_widgetHead {
+      height: 15%;
+    }
+  }
+  .dsb {
+    &_widget {
+      height: 350px;
+      width: 100%;
+    }
+  }
+}
+
+/* Other */
+
+@media screen and (min-width: 1200px) { // News hover desktop Anim
+  .nEntity {
+    &_notifCounter {
+      opacity: 0;
+      height: 18px;
+      transform: scaleY(0);
+    }
+    &_borderBox:hover .nEntity_notifCounter {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+}

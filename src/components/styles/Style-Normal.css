@@ -1,0 +1,66 @@
+/*  Normal Color Scheme of the Application */
+/* Colors */
+/* Fonts */
+@font-face {
+  font-family: "OSF";
+  src: url("/repo/SF-Pro.ttf");
+}
+@font-face {
+  font-family: "OSF Bold";
+  src: url("/repo/SF-Pro-Display-Semibold.otf");
+}
+@font-face {
+  font-family: "OSF Regular";
+  src: url("/repo/SF-Pro-Display-Regular.otf");
+}
+/* ID's */
+#SideBar {
+  background-color: #343C40;
+}
+
+#PageHeader {
+  background: #343C40;
+}
+
+#PageBG {
+  background-color: #EEEEEE;
+}
+
+#LogInExBG {
+  background-color: white;
+}
+
+#LogInTxt {
+  color: #272727;
+}
+
+#DropdownPng {
+  fill: white;
+}
+
+.drp_label {
+  color: #EEEEEE;
+}
+
+.drp_split {
+  background-color: #EEEEEE;
+}
+
+#AccDropdownBG {
+  background: #343C40;
+}
+
+/* Classes */
+.SideNav {
+  background-color: #343C40;
+}
+
+.SideIcon {
+  fill: #EEEEEE;
+}
+
+.LogInNavtem {
+  color: #272727;
+}
+
+/*# sourceMappingURL=Style-Normal.css.map */

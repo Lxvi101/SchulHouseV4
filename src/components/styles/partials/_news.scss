@@ -1,0 +1,246 @@
+/* News View */
+
+@import "../presets";
+
+#news {
+  &_label {
+    position: absolute;
+
+    top: 0;
+    width: 100%;
+    height: 75px;
+
+    background-color: #008670;
+
+    z-index: $zHigh;
+  }
+
+  &_grid {
+    display: grid;
+    grid-template-columns: 250px calc(100% - 250px);
+    grid-template-areas: "NSelector NContent";
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  &_selector {
+    grid-area: NSelector;
+    background-color: #DADBDC;
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  &_mappedEntities {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px; // 15px + 75px
+  }
+
+  &_content {
+    grid-area: NContent;
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    overflow: scroll;
+  }
+
+  &_contentArea {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 85px;
+  }
+
+  &_nfm {
+    height: 9%;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+  &_nfmIco {
+    height: 25px;
+  }
+
+  &_nfmTxt {
+    font-family: OSF Bold;
+    font-size: 30px;
+    color: #81898C;
+  }
+}
+
+.news {
+  &_lShadow {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.16);
+  }
+
+  &_wBorder { // SELF MADE FLEX GAP // OMG IS THIS STUPID SAFARI :/
+    position: relative;
+    width: 321px; // Horizontal Gap 40
+    height: 299px; // Vertical Gap 40 // Only downspace ?? Should be changed?
+
+    transition: all 0.3s ease, width 0.5s ease, opacity 0.1s ease;
+    will-change: transform, width;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &_wBG {
+    position: relative;
+    width: 281px; // OR 375px
+    height: 259px; // OR 345px
+
+    background-color: #008670; // OR white
+
+    border-radius: 20px;
+
+    cursor: pointer;
+  }
+
+  &_wImg {
+    object-fit: cover;
+    width: 100%;
+    height: 72.5%;
+
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  &_wL1 {
+    font-family: "OSF Regular";
+    font-size: 1.1em;
+    text-align: center;
+
+    width: 250px;
+
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: all 0.15s ease, width .01s ease;
+  }
+
+  &_wL2 {
+    font-family: "OSF Regular";
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+
+    width: 250px;
+
+    position: absolute;
+    top: 90.5%;
+    left: 50%;
+    transform: translate(-50%, -1em);
+
+    transition: all 0.15s ease, width .01s ease;
+  }
+}
+
+.nEntity {
+  &_borderBox {
+    position: relative;
+    height: 75px;
+    width: 85%;
+
+    margin: 5px;
+    align-self: center;
+    border-radius: 15px;
+    background: #eeeeee;
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.08);
+
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+
+  &_label {
+    height: 75px;
+    width: 12.5%;
+
+    background: #008670;
+    border-radius: 15px 0 0 15px;
+  }
+
+  &_title {
+    position: absolute;
+    top: 50%;
+    left: calc(12.5% + 10px);
+
+    width: 50%;
+
+    transform: translateY(-50%);
+
+    font-family: OSF Bold;
+    font-size: 20px;
+    text-align: left;
+    color: #008670;
+  }
+
+  &_notifIcon {
+    fill: #008670;
+    position: absolute;
+
+    top: 50%;
+    transform: translate(0, -50%);
+
+    right: 15px;
+
+    height: 35px;
+  }
+
+  &_notifCounter {
+    position: absolute;
+    top: 50%;
+    right: calc(15px * 2);
+
+    transition: all 0.25s ease;
+    transform-origin: top;
+    will-change: transform;
+
+    height: 18px;
+    width: 18px;
+    background-color: #006655;
+    border-radius: 50%;
+  }
+
+  &_notifCount {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+
+    transform: translate(50%, -50%);
+
+    color: #EEEEEE;
+    font-family: Montserrat;
+    font-size: 13px;
+  }
+}
+
+@media (pointer:fine) {
+  .nEntity_borderBox:hover {
+    box-shadow: 0px 3px 6px rgba(0,0,0, 0.32) !important;
+    background: white !important;
+  }
+}

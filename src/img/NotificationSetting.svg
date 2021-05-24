@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42"><defs>
+    <style>#cls-1{fill:#e6e6e6;}#cls-2{fill:#fff;}#cls-3{fill:#afafaf;}</style>
+</defs>
+    <g><g>
+    <circle id="cls-1" cx="21" cy="21" r="21"/>
+    <polyline id="cls-2" points="32 10 32 32 6 23"/>
+    <polyline id="cls-3" points="16 30 14.5 26 19 27.5"/>
+    <polyline id="cls-3" points="16 30 19 27.5 32 10"/>
+    <polyline id="cls-3" points="32 10 19 27.5 14.5 26"/>
+</g></g>
+</svg>

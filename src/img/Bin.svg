@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 51">
+	<defs>
+		<style>
+			.bin01{fill:#d9d9d9;}
+			.bin02{fill:#cccccc;}
+		</style>
+	</defs>
+	<g id="Ebene_2" data-name="Ebene 2">
+		<g id="Ebene_1-2" data-name="Ebene 1">
+			<g id="Bin">
+				<polygon class="bin01" points="32.28 51 3.94 51 0 5 37 5 32.28 51"/>
+				<path class="bin02" d="M0,5c3,2.93,9.9,5,18.5,5S34,7.93,37,5Z"/>
+				<path class="bin02" d="M0,5C3,2.07,9.9,0,18.5,0S34,2.07,37,5Z"/>
+			</g>
+		</g>
+	</g>
+</svg>

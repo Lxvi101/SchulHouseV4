@@ -1,0 +1,844 @@
+/* Allignment stylesheet focused on different Views */
+/* Dashboard View */
+/* Colors */
+/* Fonts */
+@font-face {
+  font-family: "OSF";
+  src: url("/repo/SF-Pro.ttf");
+}
+@font-face {
+  font-family: "OSF Bold";
+  src: url("/repo/SF-Pro-Display-Semibold.otf");
+}
+@font-face {
+  font-family: "OSF Regular";
+  src: url("/repo/SF-Pro-Display-Regular.otf");
+}
+#dsb_grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#dsb_wrapper {
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  margin-top: 20px;
+}
+#dsb_widgetcontainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+  grid-template-rows: 22.5vw 22.5vw;
+  grid-gap: 1%;
+  padding-bottom: 20px;
+  grid-template-areas: "Work Msg News Unkn1" "Work Sched Sched Unkn2";
+}
+#dsb_widgetHead {
+  width: 100%;
+  height: 3.5vw;
+  margin-bottom: 30px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px 15px 0 0;
+}
+
+.dsb_widget {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
+  background-color: white;
+}
+.dsb_iWidget {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background-color: #EEEEEE;
+  margin-bottom: 15px;
+}
+.dsb_iWidgetSLb {
+  position: absolute;
+  height: 100%;
+  width: 35px;
+  transition: all 0.25s ease;
+  border-radius: 0 20% 20% 0;
+}
+
+/* Courses View */
+/* Colors */
+/* Fonts */
+@font-face {
+  font-family: "OSF";
+  src: url("/repo/SF-Pro.ttf");
+}
+@font-face {
+  font-family: "OSF Bold";
+  src: url("/repo/SF-Pro-Display-Semibold.otf");
+}
+@font-face {
+  font-family: "OSF Regular";
+  src: url("/repo/SF-Pro-Display-Regular.otf");
+}
+#crs_grid {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 250px calc(100% - 250px);
+  grid-template-areas: "Selector Content";
+}
+#crs_selector {
+  grid-area: Selector;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+#crs_selectorBG {
+  height: 100%;
+  width: 100%;
+  background: #DADBDC;
+}
+#crs_selectorLabel {
+  width: 100%;
+  height: 75px;
+  background-color: #6A77A5;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+#crs_content {
+  grid-area: Content;
+  position: relative;
+}
+#crs_cHB {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 75px;
+}
+#crs_cHeader {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10px;
+}
+#crs_cCB {
+  position: relative;
+  top: 75px;
+  height: calc(100% - 75px);
+  width: 100%;
+  transition: all 0.25s ease;
+  opacity: 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#crs_cNotch {
+  position: fixed;
+  height: 45px;
+  width: 95px;
+  left: 85px;
+  bottom: 10px;
+  z-index: 10;
+  background-color: #484F53;
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#crs_cNotchS {
+  width: 21px;
+  margin-right: 10px;
+  fill: #eeeeee;
+  cursor: pointer;
+}
+#crs_cNotchS:hover {
+  fill: white;
+}
+#crs_cNotchDB {
+  width: 21px;
+  fill: #eeeeee;
+  cursor: pointer;
+}
+#crs_cNotchDB:hover {
+  fill: white;
+}
+#crs_cHSettGearB {
+  width: calc(min(3.5%, 31px) + 10px);
+  display: flex;
+}
+#crs_cHSettGear {
+  width: calc(100% - 10px);
+  cursor: pointer;
+}
+#crs_cHMembers {
+  width: min(3.5%, 31px);
+  cursor: pointer;
+}
+#crs_noCourseSel {
+  height: calc(100% - 75px);
+  width: 100%;
+  margin: 75px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#crs_noCourseSelFont {
+  margin-top: 15px;
+  font-family: Montserrat;
+  color: #81898C;
+  font-size: 1em;
+}
+#crs_noCourseSelIco {
+  height: 60px;
+}
+
+.crs_entityContainer {
+  height: 75px;
+  width: 85%;
+  position: relative;
+  margin: 5px;
+  align-self: center;
+  border-radius: 15px;
+  background: #eeeeee;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.crs_entityLabel {
+  height: 75px;
+  width: 15%;
+  background: #6A77A5;
+  border-radius: 15px 0 0 15px;
+}
+.crs_entityName {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(0, -50%);
+  font-family: OSF Bold;
+  font-size: 20px;
+  text-align: left;
+  color: #81898C;
+}
+.crs_cWdgB {
+  height: 28vw;
+  width: 24.5vw;
+  display: flex;
+  justify-content: center;
+}
+.crs_cWdg {
+  height: 100%;
+  width: 90%;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.crs_cWdgLbl {
+  width: 100%;
+  height: 14%;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 10%;
+}
+.crs_cnt_bg {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  margin-top: 5%;
+  background-color: #EEEEEE;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+}
+.crs_cnt_sLbl {
+  position: absolute;
+  height: 100%;
+  width: 12%;
+  transition: all 0.25s ease;
+  border-radius: 0 20% 20% 0;
+}
+.crs_cnt_label {
+  margin: 0 45px 0 calc(10px + 12%);
+  font-family: OSF;
+  font-size: 1.6em;
+  transition: all 0.25s ease;
+  color: #81898C;
+}
+.crs_cnt_iSubmt {
+  position: absolute;
+  height: 35%;
+  fill: grey;
+  right: 15px;
+  top: 14%;
+  cursor: pointer;
+}
+.crs_cnt_iDecl {
+  position: absolute;
+  height: 22%;
+  fill: grey;
+  right: 15px;
+  bottom: 14%;
+  cursor: pointer;
+}
+.crs_cnt_iCentrd {
+  position: absolute;
+  height: 27%;
+  fill: grey;
+  right: 15px;
+  cursor: pointer;
+}
+.crs_cnt_notasks {
+  font-family: Montserrat;
+  color: #81898C;
+  text-align: center;
+  width: 100%;
+}
+
+@media (pointer: fine) {
+  .crs_entityContainer:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32) !important;
+    background: white !important;
+  }
+}
+.crs_cnt_bg:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.crs_cnt_bg:hover .crs_cnt_sLbl {
+  width: 14%;
+}
+
+.crs_cnt_bg:hover .crs_cnt_label {
+  margin: 0 45px 0 calc(10px + 14%);
+}
+
+/* Timetable View */
+#tmt_grid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 700px 5px calc(100% - 705px);
+  grid-template-areas: "Timetable Gap Info";
+}
+#tmt_timetable {
+  grid-area: Timetable;
+  height: 100%;
+  width: 100%;
+  background: #DADBDC;
+}
+#tmt_timetableGrid {
+  width: 95%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: calc(100% / 12) calc(100% - 100%/12);
+  grid-row-gap: 10px;
+  grid-template-areas: "Header" "Content";
+}
+#tmt_timetableHeader {
+  grid-area: Header;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 15px;
+}
+#tmt_timetableSide {
+  grid-area: Content;
+  display: grid;
+  grid-template-rows: repeat(11, 1fr);
+  grid-row-gap: 10px;
+  margin-bottom: 10px;
+}
+#tmt_info {
+  grid-area: Info;
+  background: #eeeeee;
+}
+#tmt_header {
+  grid-area: Timetable;
+  width: 100%;
+  height: 75px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  background: #EDBC2C;
+}
+#tmt_infoHeader {
+  width: 100%;
+  height: 75px;
+  background: #eeeeee;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+#tmt_infoBox {
+  width: 100%;
+  height: calc(100% - 75px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#tmt_gap {
+  background: #484f53;
+}
+
+.tmt_margin {
+  position: relative;
+  width: calc(100% - 20px);
+  height: calc(100% - 75px - 20px);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.tmt_iconHeader {
+  width: 100%;
+  height: 100%;
+  background: #A1A5A7;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.tmt_iconHeader:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
+  background: #eeeeee;
+}
+.tmt_iconRow {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(7, 1fr);
+}
+.tmt_icon {
+  width: 100%;
+  height: 100%;
+  background: #BABFC0;
+  border-radius: 25px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.tmt_icon:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
+  background: #eeeeee;
+}
+.tmt_iconClass {
+  width: 100%;
+  height: 100%;
+  background: #C2C6C7;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.tmt_iconClass:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
+  background: #eeeeee;
+}
+.tmt_alert {
+  height: 20vw;
+  width: 50%;
+  background: white;
+  border-radius: 15px;
+  align-self: center;
+}
+.tmt_alertHeader {
+  height: 3.5vw;
+  width: 100%;
+  background: #BC656B;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px 15px 0 0;
+}
+
+/* News View */
+/* Colors */
+/* Fonts */
+@font-face {
+  font-family: "OSF";
+  src: url("/repo/SF-Pro.ttf");
+}
+@font-face {
+  font-family: "OSF Bold";
+  src: url("/repo/SF-Pro-Display-Semibold.otf");
+}
+@font-face {
+  font-family: "OSF Regular";
+  src: url("/repo/SF-Pro-Display-Regular.otf");
+}
+#news_label {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #008670;
+  z-index: 10;
+}
+#news_grid {
+  display: grid;
+  grid-template-columns: 250px calc(100% - 250px);
+  grid-template-areas: "NSelector NContent";
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#news_selector {
+  grid-area: NSelector;
+  background-color: #DADBDC;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#news_mappedEntities {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+#news_content {
+  grid-area: NContent;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+#news_contentArea {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 85px;
+}
+#news_nfm {
+  height: 9%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+#news_nfmIco {
+  height: 25px;
+}
+#news_nfmTxt {
+  font-family: OSF Bold;
+  font-size: 30px;
+  color: #81898C;
+}
+
+.news_lShadow {
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.news_wBorder {
+  position: relative;
+  width: 321px;
+  height: 299px;
+  transition: all 0.3s ease, width 0.5s ease, opacity 0.1s ease;
+  will-change: transform, width;
+  display: flex;
+  justify-content: center;
+}
+.news_wBG {
+  position: relative;
+  width: 281px;
+  height: 259px;
+  background-color: #008670;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.news_wImg {
+  object-fit: cover;
+  width: 100%;
+  height: 72.5%;
+  background-color: white;
+  border-radius: 20px 20px 0px 0px;
+}
+.news_wL1 {
+  font-family: "OSF Regular";
+  font-size: 1.1em;
+  text-align: center;
+  width: 250px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.15s ease, width 0.01s ease;
+}
+.news_wL2 {
+  font-family: "OSF Regular";
+  font-size: 1em;
+  text-align: center;
+  vertical-align: middle;
+  width: 250px;
+  position: absolute;
+  top: 90.5%;
+  left: 50%;
+  transform: translate(-50%, -1em);
+  transition: all 0.15s ease, width 0.01s ease;
+}
+
+.nEntity_borderBox {
+  position: relative;
+  height: 75px;
+  width: 85%;
+  margin: 5px;
+  align-self: center;
+  border-radius: 15px;
+  background: #eeeeee;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.nEntity_label {
+  height: 75px;
+  width: 12.5%;
+  background: #008670;
+  border-radius: 15px 0 0 15px;
+}
+.nEntity_title {
+  position: absolute;
+  top: 50%;
+  left: calc(12.5% + 10px);
+  width: 50%;
+  transform: translateY(-50%);
+  font-family: OSF Bold;
+  font-size: 20px;
+  text-align: left;
+  color: #008670;
+}
+.nEntity_notifIcon {
+  fill: #008670;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 15px;
+  height: 35px;
+}
+.nEntity_notifCounter {
+  position: absolute;
+  top: 50%;
+  right: calc(15px * 2);
+  transition: all 0.25s ease;
+  transform-origin: top;
+  will-change: transform;
+  height: 18px;
+  width: 18px;
+  background-color: #006655;
+  border-radius: 50%;
+}
+.nEntity_notifCount {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: #EEEEEE;
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+@media (pointer: fine) {
+  .nEntity_borderBox:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32) !important;
+    background: white !important;
+  }
+}
+/* Settings View */
+#sett_grid {
+  display: grid;
+  grid-template-columns: 250px calc(100% - 250px);
+  grid-template-areas: "SSelector SContent";
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#sett_selectorBG {
+  grid-area: SSelector;
+  background-color: #EEEEEE;
+}
+#sett_selectorLabel {
+  width: 100%;
+  height: 75px;
+  background-color: #484F53;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+#sett_selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+#sett_content {
+  position: relative;
+  grid-area: SContent;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: scroll;
+}
+#sett_content_ns {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sett_content_nsFnt {
+  margin-top: 15px;
+  font-family: Montserrat;
+  color: #81898C;
+  font-size: 1em;
+}
+#sett_content_nsIco {
+  height: 70px;
+}
+
+.sett_catContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.sett_ProfilePicCOntainer {
+  width: 10vw;
+  height: 10vw;
+  margin-top: 20vh;
+  transform: translate(0, -50%);
+}
+.sett_ProfilePic {
+  width: 100%;
+  height: 100%;
+}
+.sett_editProfilePic {
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 50%;
+  opacity: 0;
+  text-align: center;
+  padding-top: 50%;
+  transition: all 0.25s ease;
+}
+.sett_editProfilePicLabel {
+  color: #ffffff;
+  font-family: OSF;
+  font-size: 17px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+.sett_welcomeHeader {
+  margin-top: -4vw;
+  color: #81898C;
+  font-family: "OSF Bold";
+  font-size: 2.5vw;
+}
+.sett_contentBtnContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+.sett_contentBtnWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 60%;
+  text-align: center;
+}
+.sett_contentBtn {
+  height: 5vw;
+  width: 12.5vw;
+  background-color: #51859E;
+  border-radius: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "OSF Bold";
+  font-size: 1.5vw;
+  color: #EEEEEE;
+  cursor: pointer;
+  transition: all 0.125s ease;
+}
+.sett_contentBtn:hover {
+  background-color: #457287;
+}
+.sett_contentBtnDesc {
+  margin-top: 10px;
+  width: 205px;
+  font-family: OSF;
+  color: #81898C;
+}
+
+.settC_backgroundB {
+  position: relative;
+  width: 90%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  color: #81898C;
+  fill: #81898C;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.settC_background {
+  position: relative;
+  width: 90%;
+  height: 60px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  color: #81898C;
+  fill: #81898C;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.settC_icon {
+  height: 42px;
+  margin-left: 9%;
+  border-radius: 50%;
+}
+.settC_Font {
+  font-family: "OSF";
+  font-size: 1.25em;
+  margin: 0 0 0 5%;
+}
+.settC_sideSlider {
+  position: absolute;
+  height: 21px;
+  width: 17px;
+  right: 5%;
+}
+
+@media (pointer: fine) {
+  .settC_backgroundB:hover {
+    background-color: #484F53;
+    color: white;
+    fill: white;
+  }
+
+  .settC_background:hover {
+    background-color: #484F53;
+    color: white;
+    fill: white;
+  }
+}
+@media (pointer: fine) {
+  .sett_editProfilePic:hover {
+    opacity: 0.4;
+  }
+}
+
+/*# sourceMappingURL=ViewAllign.css.map */

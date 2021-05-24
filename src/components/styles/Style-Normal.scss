@@ -1,0 +1,53 @@
+/*  Normal Color Scheme of the Application */
+
+@import "presets";
+
+/* ID's */
+#SideBar {
+  background-color: $blueGrey;
+}
+
+#PageHeader {
+  background: $blueGrey;;
+}
+
+#PageBG {
+  background-color: $white;
+}
+
+#LogInExBG {
+  background-color: white;
+}
+
+#LogInTxt {
+  color: $dark-Grey;
+}
+
+#DropdownPng {
+  fill: white;
+}
+
+.drp_label {
+  color: $white;
+}
+
+.drp_split {
+  background-color: $white;
+}
+
+#AccDropdownBG {
+  background: $blueGrey;
+}
+
+/* Classes */
+.SideNav {
+  background-color: $blueGrey;
+}
+
+.SideIcon {
+  fill: $white;
+}
+
+.LogInNavtem {
+  color: $dark-Grey;
+}

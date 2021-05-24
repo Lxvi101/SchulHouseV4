@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31">
+    <defs>
+        <style>
+            .mbmrs1{fill:#81898c;}
+            .mbmrs2{fill:#eee;}
+            .mbmrs3{fill:#dadbdc;}
+            .mbmrs4{fill:#fff;}
+        </style>
+    </defs>
+    <g id="Ebene_2" data-name="Ebene 2">
+        <g id="Ebene_1-2" data-name="Ebene 1">
+            <circle id="Ellipse_14" data-name="Ellipse 14" class="mbmrs1" cx="15.5" cy="15.5" r="15.5"/>
+            <g id="Gruppe_24" data-name="Gruppe 24">
+                <circle id="Ellipse_11" data-name="Ellipse 11" class="mbmrs2" cx="20.86" cy="9.18" r="4.65"/>
+                <path id="Pfad_21" data-name="Pfad 21" class="mbmrs2" d="M28.45,17a7.6,7.6,0,0,1-15.18.84,5.89,5.89,0,0,1,0-.84c0-4.46,3.4-3.67,7.59-3.67S28.45,12.55,28.45,17Z"/>
+                <circle id="Ellipse_12" data-name="Ellipse 12" class="mbmrs3" cx="10.14" cy="9.18" r="4.65"/>
+                <path id="Pfad_22" data-name="Pfad 22" class="mbmrs3" d="M17.73,17a7.6,7.6,0,1,1-15.17.84,5.89,5.89,0,0,1,0-.84c0-4.46,3.39-3.67,7.58-3.67S17.73,12.55,17.73,17Z"/>
+                <circle id="Ellipse_13" data-name="Ellipse 13" class="mbmrs4" cx="15.5" cy="11.86" r="4.65"/>
+                <path id="Pfad_23" data-name="Pfad 23" class="mbmrs4" d="M23.09,19.69a7.6,7.6,0,1,1-15.18.84q0-.42,0-.84c0-4.46,3.4-3.67,7.59-3.67S23.09,15.23,23.09,19.69Z"/>
+            </g>
+        </g>
+    </g>
+</svg>

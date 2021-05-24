@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+/* Fundemental CSS */
+/* Register View */
+/* Colors */
+/* Fonts */
+@font-face {
+  font-family: "OSF";
+  src: url("/repo/SF-Pro.ttf");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "OSF Bold";
+  src: url("/repo/SF-Pro-Display-Semibold.otf");
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "OSF Regular";
+  src: url("/repo/SF-Pro-Display-Regular.otf");
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#reg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+#reg_header {
+  width: 100%;
+  height: 75px;
+  background: #343C40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reg_hLabel {
+  font-family: Montserrat;
+  font-size: 2.5em;
+  color: #EEEEEE;
+}
+#reg_sidebar {
+  position: absolute;
+  margin: 20px 0 0 20px;
+  border-radius: 20px;
+  width: 300px;
+  height: 80%;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#reg_sidebar_label {
+  margin-top: 15px;
+  font-family: OSF Bold;
+  font-size: 20px;
+}
+#reg_sidebar_signUpLink {
+  margin-top: 40px;
+  font-family: OSF;
+  color: #6A77A5;
+  text-decoration: underline;
+}
+#reg_sidebar_lostLink {
+  margin-top: 15px;
+  font-family: OSF;
+  color: #6A77A5;
+  text-decoration: underline;
+}
+#reg_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#reg_content_iptMail {
+  font-family: Montserrat;
+  font-size: 17.5px;
+  margin-top: 30vh;
+  border: 0;
+  outline: 0;
+  color: #81898C;
+  caret-color: #81898C;
+  height: 45px;
+  width: 300px;
+  background: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 45px;
+  padding: 0 15px 0 15px;
+}
+#reg_content_iptMail:focus {
+  border: 1px #51859e;
+}
+#reg_content_iptMail::-webkit-input-placeholder {
+  text-align: left;
+  color: #EEEEEE;
+}
+#reg_content_iptPwd {
+  font-family: Montserrat;
+  font-size: 25px;
+  margin-top: 10px;
+  color: #81898C;
+  caret-color: #81898C;
+  border: 0;
+  outline: 0;
+  height: 45px;
+  width: 300px;
+  background: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 45px;
+  padding: 0 15px 0 15px;
+}
+#reg_content_iptPwd:focus {
+  border: 1px #51859e;
+}
+#reg_content_iptPwd::-webkit-input-placeholder {
+  text-align: left;
+  color: #EEEEEE;
+}
+#reg_content_submit {
+  height: 45px;
+  width: 110px;
+  margin-top: 30px;
+  background: #51859e;
+  border-radius: 45px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  transition: all 0.25s ease;
+}
+#reg_content_submit_label {
+  font-family: OSF Bold;
+  font-size: 19px;
+  color: #EEEEEE;
 }
 
-.App-link {
-  color: #61dafb;
+@media (pointer: fine) {
+  #reg_content_submit:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32);
+    background: #436e81;
+  }
+}
+html, body {
+  -webkit-user-select: none;
+  background-color: #eeeeee;
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#PageGrid {
+  display: grid;
+  grid-template-columns: 75px calc(100vw - 75px);
+  grid-template-rows: 75px calc(100vh - 75px);
+  grid-template-areas: "Sidebar Header" "Sidebar ContentView";
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37">
+    <defs>
+        <style>
+            .inbx1{fill:#eee;}
+            .inbx2{fill:#81898c;}
+        </style>
+    </defs>
+    <g id="Ebene_2" data-name="Ebene 2">
+        <g id="Ebene_1-2" data-name="Ebene 1">
+            <rect class="inbx1" x="1" y="1" width="35" height="35" rx="3"/>
+            <path class="inbx2" d="M33,2a2,2,0,0,1,2,2V33a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H33m0-2H4A4,4,0,0,0,0,4V33a4,4,0,0,0,4,4H33a4,4,0,0,0,4-4V4a4,4,0,0,0-4-4Z"/>
+            <path class="inbx2" d="M30.57,22.52H28.73a6.42,6.42,0,0,1-6.21,4.83h-8a6.42,6.42,0,0,1-6.21-4.83H6.43A6.43,6.43,0,0,0,0,29v1.61A6.43,6.43,0,0,0,6.43,37H30.57A6.43,6.43,0,0,0,37,30.57V29A6.43,6.43,0,0,0,30.57,22.52Z"/>
+        </g>
+    </g>
+</svg>
