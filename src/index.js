@@ -1,17 +1,27 @@
+// Dependencys //
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
+// Components //
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './App.css';
 
+import Register from "./components/Register";
+
+// Redux //
+import ContextStore from "./context/ContextStore";
+
+// Render //
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+        <ContextStore>
+            <Router>
+                <Switch>
+                    <Route path='/register' exact component={Register}/>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+                    <Route path='/' component={App}/>
+                </Switch>
+            </Router>
+        </ContextStore>,
+    document.getElementById('root')
+);
